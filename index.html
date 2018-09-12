@@ -15,17 +15,18 @@
     <h1 class="header">Crystal Collector Game!</h1>
     <div class="container">
         <p>You will be give a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+            total
             score.</p>
-        <p>You win the game by matching your total score to the random number, and you lose the game if your total score
+        <p>You win the game by matching your total score to the random number, and you lose the game if your total
+            score
             goes above the random number.</p>
         <p>The value of each crystal is hidden from you until you click on it.</p>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col3-sm" id="randomNumberBox"></div>
-            <div class="col2-sm" id="totalsBox"></div>
-        </div>
+        <h2 id="totalsBox"></h2>
+        <br>
+        <div class="col3-sm" id="randomNumberBox"></div>
     </div>
     <div class="row" id="crystals">
         <img class="crystal-image" src="assets/images/crystal1.jpg">
@@ -34,6 +35,8 @@
         <img class="crystal-image" src="assets/images/crystal4.jpg">
     </div>
     <div id="userNumberBox"></div>
+    <button class="btn btn-danger" id="reset">Restart!</button>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </body>
 
