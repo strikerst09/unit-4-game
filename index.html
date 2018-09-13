@@ -8,34 +8,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 
 <body>
-    <h1 class="header">Crystal Collector Game!</h1>
-    <div class="container">
-        <p>You will be give a random number at the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+    <h1 class="header" id="title">Crystal Collector Game!</h1>
+    <div class="container" id="instructions">
+        <p>You will be give a <b>random number</b> at the start of the game.</p>
+        <p>There are <b>four crystals</b> below. By clicking on a crystal you will add a specific <b>amount</b> of points to your
             total
             score.</p>
-        <p>You win the game by matching your total score to the random number, and you lose the game if your total
+        <p>You win the game by <b>matching</b> your total score to the random number, and you lose the game if your total
             score
-            goes above the random number.</p>
+            <b>goes above</b> the random number.</p>
         <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Goooooood luck!</p>
     </div>
     <div class="container">
         <h2 id="totalsBox"></h2>
         <br>
-        <div class="col3-sm" id="randomNumberBox"></div>
+        <div class="col3-sm numberBox" id="randomNumberBox"></div>
     </div>
+    <div class="container">
     <div class="row" id="crystals">
-        <img class="crystal-image" src="assets/images/crystal1.jpg">
-        <img class="crystal-image" src="assets/images/crystal2.jpg">
-        <img class="crystal-image" src="assets/images/crystal3.jpg">
-        <img class="crystal-image" src="assets/images/crystal4.jpg">
+        <img id="crystal1" class="crystal-image" src="assets/images/crystal1.jpg">
+        <img id="crystal2" class="crystal-image" src="assets/images/crystal2.jpg">
+        <img id="crystal3" class="crystal-image" src="assets/images/crystal3.jpg">
+        <img id="crystal4" class="crystal-image" src="assets/images/crystal4.jpg">
     </div>
+    </div>
+    <div class="container numberBox">
     <div id="userNumberBox"></div>
-    <button class="btn btn-danger" id="reset">Restart!</button>
+</div>
+<div class="container">
+    <button class="btn btn-danger" id="reset">Restart!</button></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 </body>

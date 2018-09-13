@@ -1,0 +1,24 @@
+body {
+    background-image: url(../images/backgroundimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    padding: 8px;
+}
+#title {
+    text-align: center;
+}
+.crystal-image {
+    height: 150px;
+    width: 125px;
+    padding: 10px;
+}
+#reset {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+.numberBox {
+    font-weight: bold;
+}
